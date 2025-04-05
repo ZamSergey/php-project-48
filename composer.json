@@ -1,0 +1,23 @@
+{
+    "name": "hexlet/code",
+    "description": "Учебный проект 2",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/gendiff"
+      
+    ],
+    "authors": [
+        {
+            "name": "ZamSergey",
+            "email": "zamsergey@gmail.com"
+        }
+    ],
+    "require": {
+        "docopt/docopt": "^1.0"
+    }
+}
