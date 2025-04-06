@@ -2,10 +2,10 @@
     "name": "hexlet/code",
     "description": "Учебный проект 2",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
+    "autoload": {        
+        "files": [
+            "src/FileParser.php"             
+        ]
     },
     "bin": [
         "bin/gendiff"
