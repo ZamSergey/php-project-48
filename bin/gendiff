@@ -9,7 +9,7 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use function GenDiff\FileParser\parseFile;
+use function GenDiff\FileParser\genDiff;
 
 $doc = <<<DOC
 Generate diff
@@ -34,6 +34,6 @@ $file2 = $args['<secondFile>'];
 // foreach ($args as $k=>$v)
 //     echo $k.': '.json_encode($v).PHP_EOL;
 
-parseFile($file1);
-parseFile($file2);
+genDiff($file1, $file2);
+
 //     echo $args['<firstFile>'];
